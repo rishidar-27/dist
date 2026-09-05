@@ -1,0 +1,88 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Serve existing static files and folders directly (assets, uploads, images)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # Direct 404 for missing static asset files (prevents MIME text/html script error)
+  RewriteCond %{REQUEST_URI} \.(js|css|png|jpg|jpeg|gif|ico|svg|mp4|webm|woff2|ttf|eot)$ [NC]
+  RewriteRule ^ - [R=404,L]
+
+  # Route /api/* requests directly to cPanel PHP API Engine (api.php)
+  RewriteCond %{REQUEST_URI} ^/api/ [NC]
+  RewriteRule ^api/(.*)$ api.php [L,QSA]
+
+  # Route social media crawlers (WhatsApp, Facebook, Twitter, Telegram, LinkedIn, Discord) for rich link preview
+  RewriteCond %{HTTP_USER_AGENT} (facebookexternalhit|WhatsApp|Twitterbot|TelegramBot|LinkedInBot|Discordbot|Slackbot|SkypeUriPreview|Googlebot) [NC]
+  RewriteRule ^(.*)$ api.php?og_path=$1 [L,QSA]
+
+  # Route all React SPA client URLs to index.html
+  RewriteRule ^(.*)$ index.html [L,QSA]
+</IfModule>
+
+# Fail-safe Apache Fallback for cPanel subdomains & SPA routing (only if mod_rewrite is absent)
+<IfModule !mod_rewrite.c>
+  FallbackResource /index.html
+</IfModule>
+
+# ─── SECURITY: Block direct access to sensitive config, logs, and backup files ─
+<FilesMatch "(\.env|\.log|\.htaccess|\.htpasswd|\.git|\.gitignore|\.user\.ini|\.sql|\.bak)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order Allow,Deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+# Block direct access to backups directory
+<IfModule mod_rewrite.c>
+  RewriteRule ^backups/ - [F,L,NC]
+</IfModule>
+
+# Security Headers: Clickjacking, MIME sniffing, and Referrer protection
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Cache control: HTML files must never be cached so new JS builds load instantly
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|htm)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+  </FilesMatch>
+
+  <FilesMatch "\.(js|css|png|jpg|jpeg|gif|ico|svg|mp4|webm|m4v|woff2|ttf|eot)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+</IfModule>
+
+# Increase PHP limits for large video uploads (up to 512MB)
+<IfModule mod_php7.c>
+  php_value upload_max_filesize 512M
+  php_value post_max_size 512M
+  php_value memory_limit 512M
+  php_value max_execution_time 300
+  php_value max_input_time 300
+</IfModule>
+<IfModule mod_php8.c>
+  php_value upload_max_filesize 512M
+  php_value post_max_size 512M
+  php_value memory_limit 512M
+  php_value max_execution_time 300
+  php_value max_input_time 300
+</IfModule>
+<IfModule mod_php.c>
+  php_value upload_max_filesize 512M
+  php_value post_max_size 512M
+  php_value memory_limit 512M
+  php_value max_execution_time 300
+  php_value max_input_time 300
+</IfModule>
