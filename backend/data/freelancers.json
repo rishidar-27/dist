@@ -1,0 +1,222 @@
+[
+  {
+    "email": "haririshidar2004@gmail.com",
+    "username": "haririshidar2004",
+    "name": "2004",
+    "member_id": "GGVE0002",
+    "portfolio_data": {
+      "id": "freelancer-1",
+      "userCode": "GGVE0002",
+      "email": "haririshidar2004@gmail.com",
+      "username": "haririshidar2004",
+      "fullName": "2004",
+      "title": "Video Editor",
+      "bio": "Professional video editor and motion designer.",
+      "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80",
+      "softwares": [
+        "Premiere Pro",
+        "After Effects"
+      ],
+      "approvalStatus": "approved",
+      "hasCompletedOnboarding": true,
+      "createdAt": "2026-09-01T15:00:00Z",
+      "videos": [
+        {
+          "id": "vid-ggve0002-1",
+          "title": "1",
+          "videoUrl": "/videos/1.mp4",
+          "orientation": "vertical",
+          "category": "Reels / Shorts",
+          "duration": "00:12"
+        }
+      ]
+    },
+    "has_completed_onboarding": 1,
+    "updated_at": "2026-09-02T10:03:30.353Z"
+  },
+  {
+    "email": "sathiyan8355@gmail.com",
+    "username": "sathiyan",
+    "name": "SATHIYAN A",
+    "member_id": "GGVE0003",
+    "portfolio_data": {
+      "id": "freelancer-2",
+      "userCode": "GGVE0003",
+      "email": "sathiyan8355@gmail.com",
+      "username": "sathiyan",
+      "fullName": "SATHIYAN A",
+      "title": "Video Editor & Colorist",
+      "bio": "Creative editor specializing in viral retention and pacing.",
+      "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
+      "softwares": [
+        "Premiere Pro",
+        "DaVinci Resolve"
+      ],
+      "approvalStatus": "approved",
+      "hasCompletedOnboarding": true,
+      "createdAt": "2026-09-01T15:10:00Z",
+      "videos": [
+        {
+          "id": "vid-ggve0003-1",
+          "title": "KKR",
+          "videoUrl": "/videos/2.mp4",
+          "orientation": "vertical",
+          "category": "Reels / Shorts",
+          "duration": "00:05"
+        }
+      ]
+    },
+    "has_completed_onboarding": 1,
+    "updated_at": "2026-09-02T10:03:30.372Z"
+  },
+  {
+    "email": "sibisivanezhil@gmail.com",
+    "username": "sibisivanezhil",
+    "name": "Sibi sivan ezhil B",
+    "member_id": "GGVE0004",
+    "portfolio_data": {
+      "id": "freelancer-3",
+      "userCode": "GGVE0004",
+      "email": "sibisivanezhil@gmail.com",
+      "username": "sibisivanezhil",
+      "fullName": "Sibi sivan ezhil B",
+      "title": "Short-Form & Long-Form Video Editor",
+      "bio": "Expert in narrative editing, gameplay, screen recording, and commercial cuts.",
+      "avatarUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80",
+      "softwares": [
+        "Premiere Pro",
+        "After Effects",
+        "CapCut"
+      ],
+      "approvalStatus": "approved",
+      "hasCompletedOnboarding": true,
+      "createdAt": "2026-09-01T15:20:00Z",
+      "videos": [
+        {
+          "id": "vid-ggve0004-1",
+          "title": "Screen Recording 2025-08-1...",
+          "videoUrl": "/videos/4.mp4",
+          "orientation": "vertical",
+          "category": "Reels / Shorts",
+          "duration": "00:21"
+        },
+        {
+          "id": "vid-ggve0004-2",
+          "title": "Recording 2024-09-24 012713",
+          "videoUrl": "/videos/6.mp4",
+          "orientation": "horizontal",
+          "category": "YouTube / Long Form",
+          "duration": "00:25"
+        }
+      ]
+    },
+    "has_completed_onboarding": 1,
+    "updated_at": "2026-09-02T10:03:30.372Z"
+  },
+  {
+    "email": "meenatchisundaram477@gmail.com",
+    "username": "sundarn",
+    "name": "Sundar . N",
+    "member_id": "GGVE0005",
+    "portfolio_data": {
+      "id": "freelancer-4",
+      "userCode": "GGVE0005",
+      "email": "meenatchisundaram477@gmail.com",
+      "username": "sundarn",
+      "fullName": "Sundar . N",
+      "title": "Video Editor & Motion Designer",
+      "bio": "Specialist in motivational reels, sound design, and hook polishing.",
+      "avatarUrl": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&q=80",
+      "softwares": [
+        "Premiere Pro",
+        "After Effects"
+      ],
+      "approvalStatus": "approved",
+      "hasCompletedOnboarding": true,
+      "createdAt": "2026-09-01T15:30:00Z",
+      "videos": [
+        {
+          "id": "vid-ggve0005-1",
+          "title": "1000325937",
+          "videoUrl": "/videos/5.mp4",
+          "orientation": "vertical",
+          "category": "Law of Average - Win in Life",
+          "duration": "00:24"
+        }
+      ]
+    },
+    "has_completed_onboarding": 1,
+    "updated_at": "2026-09-02T10:03:30.372Z"
+  },
+  {
+    "email": "kanishjebamathew@gmail.com",
+    "username": "kanishjebamathew",
+    "name": "Mathew M",
+    "member_id": "GGVE0006",
+    "portfolio_data": {
+      "id": "freelancer-5",
+      "userCode": "GGVE0006",
+      "email": "kanishjebamathew@gmail.com",
+      "username": "kanishjebamathew",
+      "fullName": "Mathew M",
+      "title": "Widescreen & UI Showcase Specialist",
+      "bio": "Editor specializing in SaaS demos, tech explainers, and widescreen productions.",
+      "avatarUrl": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80",
+      "softwares": [
+        "Premiere Pro",
+        "After Effects",
+        "DaVinci Resolve"
+      ],
+      "approvalStatus": "approved",
+      "hasCompletedOnboarding": true,
+      "createdAt": "2026-09-01T20:00:00Z",
+      "videos": [
+        {
+          "id": "vid-ggve0006-1",
+          "title": "CrisisAI — NGO Disaster Response Coordinator",
+          "videoUrl": "/videos/11.mp4",
+          "orientation": "horizontal",
+          "category": "YouTube / Long Form",
+          "duration": "00:48"
+        }
+      ]
+    },
+    "has_completed_onboarding": 1,
+    "updated_at": "2026-09-02T10:03:30.372Z"
+  },
+  {
+    "email": "abdulrahman05092010@gmail.com",
+    "username": "abdulrahman",
+    "name": "Abdul Rahman",
+    "member_id": "GGVE0007",
+    "portfolio_data": {
+      "id": "freelancer-6",
+      "userCode": "GGVE0007",
+      "email": "abdulrahman05092010@gmail.com",
+      "username": "abdulrahman",
+      "fullName": "Abdul Rahman",
+      "title": "Cinematic Reel Editor",
+      "bio": "High-impact short form content creator and cinematic reel specialist.",
+      "avatarUrl": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop&q=80",
+      "softwares": [
+        "Premiere Pro",
+        "After Effects"
+      ],
+      "approvalStatus": "approved",
+      "hasCompletedOnboarding": true,
+      "createdAt": "2026-09-01T21:00:00Z",
+      "videos": [
+        {
+          "id": "vid-ggve0007-1",
+          "title": "basic reel",
+          "videoUrl": "/videos/7.mp4",
+          "orientation": "vertical",
+          "category": "Reels & Shorts",
+          "duration": "00:28"
+        }
+      ]
+    },
+    "has_completed_onboarding": 1,
+    "updated_at": "2026-09-02T10:03:30.372Z"
+  }
+]

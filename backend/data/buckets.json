@@ -1,0 +1,20 @@
+[
+  {
+    "id": "bkt_1788338665710",
+    "slug": "karthik",
+    "client_name": "KARTHIK",
+    "clientName": "KARTHIK",
+    "description": "Client curated videos",
+    "video_ids": [
+      "proj-1788279239081",
+      "proj-1788276442265",
+      "proj-1788257882308"
+    ],
+    "videoIds": [
+      "proj-1788279239081",
+      "proj-1788276442265",
+      "proj-1788257882308"
+    ],
+    "updated_at": "2026-09-02T10:49:47.255Z"
+  }
+]
